@@ -25,6 +25,10 @@ io.on('connection', function(client) {
     });
 });
 
+app.get('/', function(request, response) {
+    response.send('Home.');
+});
+
 // Forward task results to the clients who initiated them.
 app.post('/notify', function(request, response) {
     io.to(request.body.clientid).emit('update', `${request.body.result}-${request.body.clientid}`);
