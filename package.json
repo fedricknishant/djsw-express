@@ -1,0 +1,26 @@
+
+
+{
+  "name": "notifier-example",
+  "version": "1.0.0",
+  "description": "This example is so cool.",
+  "main": "notifier.js",
+  "scripts": {
+    "start": "node notifier.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "fedrick",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
